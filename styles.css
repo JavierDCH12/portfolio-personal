@@ -1,6 +1,7 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
+    width: 1000px;
 }
 
 header {
@@ -10,6 +11,9 @@ header {
     height: 90px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 96%;
+    top: 0;
 }
 
 
@@ -48,6 +52,7 @@ header {
     font-size: 54px;
     opacity: 0;
     animation: fade-in 3s forwards;
+    width: 50%;
 }
 
 @keyframes fade-in {
@@ -60,13 +65,157 @@ header {
     }
 }
 
-#aside{
-    width: 55px;
-    height: 200px;
-    background-color: red;
+@keyframes blink {
+    0% {
+      color: gray;
+    }
+    25% {
+      color: #555;
+    }
+    50% {
+      color: black;
+    }
+    75% {
+      color: #555;
+    }
+    100% {
+      color: gray;
+    }
+  }
+  
+  #welcome_h1 {
+    animation: blink 8s infinite;
+  }
+
+
+
+
+
+
+
+
+
+
+#aside {
+    width: 65px;
+    height: 220px;
+    background-color: #ebebeb;
+    border-radius: 6px;
+    margin-left: 8px;
+
 }
 
-#social_elements{
+#social_elements {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+
+
 }
+
+
+#my_skills_title {
+    padding-top: 5px;
+}
+
+.each_social_element {
+    padding-top: 15px;
+    width: 45px;
+    height: 45px;
+    padding-left: 5px;
+}
+
+#my_skills {
+    width: 500px;
+    height: 220px;
+    background-color: #ebebeb;
+    margin: auto;
+    margin-left: 1000px;
+    border-radius: 6px;
+
+
+}
+
+#skills_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+#skills_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+
+}
+
+#skills_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.each_my_skill {
+    padding: 20px;
+    background-color: white;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.each_my_skill:hover{
+    cursor: pointer;
+}
+
+
+
+
+  #html{
+    background-color: #ff4c1e;
+    color: white;
+  }
+
+  #css{
+    background-color: #004ce8;
+    color: white;
+  }
+
+  #react{
+    background-color: #00d8ff;
+    color: white;
+  }
+
+  #javascript{
+    background-color: #ffd93a;
+    color: white;
+  }
+  #typescript{
+    background-color: #2f74c0;
+    color: white;
+  }
+
+  #mysql{
+    background-color: #5181a2;
+    color: #feac14;
+  }
+  #python{
+    background-color: #3876ac;
+    color: #f7cd00;
+  }
+  #php{
+    background-color: #777bb3;
+    color: black;
+  }
+  #django{
+    background-color: #103e2e;
+    color: white;
+  }
