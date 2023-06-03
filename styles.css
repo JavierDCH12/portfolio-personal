@@ -1,7 +1,18 @@
+html {
+    height: 100%;
+  }
+
 body {
     text-align: center;
     font-family: Arial, sans-serif;
-    width: 1000px;
+    height: 1000px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  flex-direction: column;
+  margin: 0;
+
 }
 
 header {
@@ -12,10 +23,11 @@ header {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    width: 96%;
+    left: 0;
+    right: 0;
     top: 0;
+    z-index: 1;
 }
-
 
 #title {
     margin-top: 0;
@@ -40,7 +52,7 @@ header {
 }
 
 .each_element {
-    color: #ccc;
+    color: #e6e6e6;
 }
 
 .each_element:hover {
@@ -49,10 +61,13 @@ header {
 
 #welcome-text {
     margin: auto;
-    font-size: 54px;
+    font-size: 50px;
     opacity: 0;
     animation: fade-in 3s forwards;
     width: 50%;
+    top: 100%;
+    margin-top: 200px;
+    white-space: nowrap;
 }
 
 @keyframes fade-in {
@@ -67,34 +82,29 @@ header {
 
 @keyframes blink {
     0% {
-      color: gray;
+        color: gray;
     }
+
     25% {
-      color: #555;
+        color: #555;
     }
+
     50% {
-      color: black;
+        color: #333;
     }
+
     75% {
-      color: #555;
+        color: #555;
     }
+
     100% {
-      color: gray;
+        color: gray;
     }
-  }
-  
-  #welcome_h1 {
+}
+
+#welcome_h1 {
     animation: blink 8s infinite;
-  }
-
-
-
-
-
-
-
-
-
+}
 
 #aside {
     width: 65px;
@@ -102,21 +112,12 @@ header {
     background-color: #ebebeb;
     border-radius: 6px;
     margin-left: 8px;
-
 }
 
 #social_elements {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
-
-}
-
-
-#my_skills_title {
-    padding-top: 5px;
 }
 
 .each_social_element {
@@ -133,8 +134,7 @@ header {
     margin: auto;
     margin-left: 1000px;
     border-radius: 6px;
-
-
+    margin-bottom: 55px;
 }
 
 #skills_1 {
@@ -149,7 +149,6 @@ header {
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 20px;
-
 }
 
 #skills_3 {
@@ -172,50 +171,76 @@ header {
     font-size: 20px;
 }
 
-.each_my_skill:hover{
+.each_my_skill:hover {
     cursor: pointer;
 }
 
-
-
-
-  #html{
+#html {
     background-color: #ff4c1e;
     color: white;
-  }
+}
 
-  #css{
+#css {
     background-color: #004ce8;
     color: white;
-  }
+}
 
-  #react{
+#react {
     background-color: #00d8ff;
     color: white;
-  }
+}
 
-  #javascript{
+#javascript {
     background-color: #ffd93a;
     color: white;
-  }
-  #typescript{
+}
+
+#typescript {
     background-color: #2f74c0;
     color: white;
-  }
+}
 
-  #mysql{
+#mysql {
     background-color: #5181a2;
     color: #feac14;
-  }
-  #python{
+}
+
+#python {
     background-color: #3876ac;
     color: #f7cd00;
-  }
-  #php{
+}
+
+#php {
     background-color: #777bb3;
     color: black;
-  }
-  #django{
+}
+
+#django {
     background-color: #103e2e;
     color: white;
+}
+
+/*#footer {
+    background-color: #555;
+    color: #fff;
+    height: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 35px;
+    position: fixed;
+}*/
+
+#footer_p {
+    font-size: 15px;
+}
+#footer {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    height: 30px;
+    margin-top: auto;
+    opacity: 0.9;
+    padding-bottom: 15px;
   }
