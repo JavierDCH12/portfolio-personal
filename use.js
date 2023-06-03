@@ -6,28 +6,24 @@ window.onload = function () {
   
     function webTitle() {
     setTimeout(function () {
-      document.getElementById("welcome-text").style.display = "block";
-    }, 5000);
+      document.getElementById("welcome_h1").style.display = "block";
+    }, 8000);
   }
 
   function myName() {
-    const title = document.getElementById("title");
-    const titleText = title.innerText;
-    title.innerText = "";
   
-    let index = 0;
-    const interval = setInterval(() => {
-      if (titleText[index] == " ") {
-        title.innerText += " ";
-        index++;
+
+
+    var titleElement = document.getElementById('title');
+      var titleText = "Javier Delgado Chacón";
+      var characters = titleText.split('');
+      titleElement.innerHTML = ""; // Vaciar el contenido inicialmente
+
+      for (var i = 0; i < characters.length; i++) {
+        setTimeout(function(character) {
+          titleElement.innerHTML += character;
+        }, 200 * i, characters[i]);
       }
-      title.innerText += titleText[index];
-      index++;
-  
-      if (index === titleText.length) {
-        clearInterval(interval);
-      }
-    }, 200);
   }
 
 
