@@ -1,21 +1,18 @@
 html {
     height: 100%;
   }
-
-body {
+  
+  body {
     text-align: center;
     font-family: Arial, sans-serif;
-    height: 1000px;
-    overflow-x: hidden;
-    width: 100%;
     height: 100vh;
+    overflow-x: hidden;
     display: flex;
-  flex-direction: column;
-  margin: 0;
-
-}
-
-header {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  header {
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -27,16 +24,16 @@ header {
     right: 0;
     top: 0;
     z-index: 1;
-}
-
-#title {
+  }
+  
+  #title {
     margin-top: 0;
     margin-right: 500px;
     padding-top: 25px;
     letter-spacing: 5px;
-}
-
-.elements {
+  }
+  
+  .elements {
     text-align: right;
     padding: 5px;
     padding-bottom: 15px;
@@ -44,22 +41,22 @@ header {
     align-items: center;
     padding: 10px;
     font-size: 25px;
-}
-
-.elements>a {
+  }
+  
+  .elements>a {
     text-decoration: none;
     padding-left: 20px;
-}
-
-.each_element {
+  }
+  
+  .each_element {
     color: #e6e6e6;
-}
-
-.each_element:hover {
+  }
+  
+  .each_element:hover {
     color: white;
-}
-
-#welcome-text {
+  }
+  
+  #welcome-text {
     margin: auto;
     font-size: 50px;
     opacity: 0;
@@ -68,96 +65,117 @@ header {
     top: 100%;
     margin-top: 200px;
     white-space: nowrap;
-}
+  }
 
-@keyframes fade-in {
+  #welcome_h1{
+    margin: auto;
+    font-size: 80px;
+    animation: fade-in 3s forwards;
+    top: 100%;
+    white-space: nowrap;
+
+
+
+   
+   
+
+   
+
+
+    
+  }
+  
+  @keyframes fade-in {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
-
+  
     100% {
-        opacity: 1;
+      opacity: 1;
     }
-}
-
-@keyframes blink {
+  }
+  
+  @keyframes blink {
     0% {
-        color: gray;
+      color: gray;
     }
-
+  
     25% {
-        color: #555;
+      color: #555;
     }
-
+  
     50% {
-        color: #333;
+      color: #333;
     }
-
+  
     75% {
-        color: #555;
+      color: #555;
     }
-
+  
     100% {
-        color: gray;
+      color: gray;
     }
-}
-
-#welcome_h1 {
+  }
+  
+  #welcome_h1 {
     animation: blink 8s infinite;
-}
-
-#aside {
+  }
+  
+  #aside {
     width: 65px;
-    height: 220px;
     background-color: #ebebeb;
     border-radius: 6px;
     margin-left: 8px;
-}
-
-#social_elements {
+  }
+  
+  #social_elements {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.each_social_element {
-    padding-top: 15px;
+    height: 200px;
+  }
+  
+  .each_social_element {
+    padding-bottom: 5px;
+    padding-top: 5px;
     width: 45px;
     height: 45px;
     padding-left: 5px;
-}
-
-#my_skills {
+  }
+  
+  #my_skills {
     width: 500px;
-    height: 220px;
+    height: auto;
     background-color: #ebebeb;
     margin: auto;
-    margin-left: 1000px;
     border-radius: 6px;
     margin-bottom: 55px;
-}
-
-#skills_1 {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #skills_1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 20px;
-}
-
-#skills_2 {
+  }
+  
+  #skills_2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 20px;
-}
-
-#skills_3 {
+  }
+  
+  #skills_3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.each_my_skill {
+    margin-bottom: 10px;
+  }
+  
+  .each_my_skill {
     padding: 20px;
     background-color: white;
     padding: 8px 16px;
@@ -169,73 +187,58 @@ header {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     font-size: 20px;
-}
-
-.each_my_skill:hover {
+  }
+  
+  .each_my_skill:hover {
     cursor: pointer;
-}
-
-#html {
+  }
+  
+  #html {
     background-color: #ff4c1e;
     color: white;
-}
-
-#css {
+  }
+  
+  #css {
     background-color: #004ce8;
     color: white;
-}
-
-#react {
+  }
+  
+  #react {
     background-color: #00d8ff;
     color: white;
-}
-
-#javascript {
+  }
+  
+  #javascript {
     background-color: #ffd93a;
     color: white;
-}
-
-#typescript {
+  }
+  
+  #typescript {
     background-color: #2f74c0;
     color: white;
-}
-
-#mysql {
+  }
+  
+  #mysql {
     background-color: #5181a2;
     color: #feac14;
-}
-
-#python {
+  }
+  
+  #python {
     background-color: #3876ac;
-    color: #f7cd00;
-}
-
-#php {
+    color: #fed60b;
+  }
+  
+  #php {
     background-color: #777bb3;
     color: black;
-}
-
-#django {
+  }
+  
+  #django {
     background-color: #103e2e;
-    color: white;
-}
-
-/*#footer {
-    background-color: #555;
-    color: #fff;
-    height: 10px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 0px;
-    padding-bottom: 35px;
-    position: fixed;
-}*/
-
-#footer_p {
-    font-size: 15px;
-}
-#footer {
+    color: rgb(223, 223, 223);
+  }
+  
+  #footer {
     background-color: #555;
     color: #fff;
     padding: 10px;
@@ -244,3 +247,4 @@ header {
     opacity: 0.9;
     padding-bottom: 15px;
   }
+  
