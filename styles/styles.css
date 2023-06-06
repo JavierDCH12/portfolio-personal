@@ -31,6 +31,7 @@ html {
     margin-right: 500px;
     padding-top: 25px;
     letter-spacing: 5px;
+    font-size: 45px;
   }
   
   .elements {
@@ -47,6 +48,7 @@ html {
     color: #e6e6e6;
     text-decoration: none;
     padding-right: 20px;
+    font-weight: 500;
 
   }
   .p_element a {
@@ -168,6 +170,12 @@ html {
     border-radius: 6px;
     margin-bottom: 55px;
   }
+
+  #my_skills_title{
+    padding-top: 20px;
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
   
   #skills_1 {
     display: flex;
@@ -254,8 +262,8 @@ html {
   }
   
   #footer {
-    background-color: #555;
-    color: #fff;
+    background-color: white;
+    color: #555;
     padding: 10px;
     height: 60px; /* Ajusta el valor de altura según tus necesidades */
     margin-top: auto;

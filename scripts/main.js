@@ -7,7 +7,7 @@ window.onload = function () {
     function webTitle() {
     setTimeout(function () {
       document.getElementById("welcome_h1").style.display = "block";
-    }, 8000);
+    }, 5000);
   }
 
   function myName() {
