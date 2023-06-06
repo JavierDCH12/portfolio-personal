@@ -42,20 +42,45 @@ html {
     padding: 10px;
     font-size: 25px;
   }
-  
-  .elements>a {
-    text-decoration: none;
-    padding-left: 20px;
-  }
-  
-  .each_element {
+  .p_element  {
+    position: relative;
     color: #e6e6e6;
+    text-decoration: none;
+    padding-right: 20px;
+
+  }
+  .p_element a {
+    text-decoration: none;
+    color: #e6e6e6;
+
   }
   
-  .each_element:hover {
+  .p_element:hover {
     color: white;
   }
   
+  .p_element::after {
+    content: '';
+    position: absolute;
+    width: 86%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #929292;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    opacity: 0;
+  }
+  
+  .p_element:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    opacity: 1;
+  }
+
+
+
   #welcome-text {
     margin: auto;
     font-size: 50px;
@@ -69,19 +94,10 @@ html {
 
   #welcome_h1{
     margin: auto;
-    font-size: 80px;
+    font-size: 90px;
     animation: fade-in 3s forwards;
     top: 100%;
     white-space: nowrap;
-
-
-
-   
-   
-
-   
-
-
     
   }
   
@@ -145,13 +161,12 @@ html {
   
   #my_skills {
     width: 500px;
-    height: auto;
+    height: 280px;
     background-color: #ebebeb;
     margin: auto;
+    margin-right: 20px; /* Añade esta línea */
     border-radius: 6px;
     margin-bottom: 55px;
-    padding: 20px;
-    box-sizing: border-box;
   }
   
   #skills_1 {
@@ -242,9 +257,13 @@ html {
     background-color: #555;
     color: #fff;
     padding: 10px;
-    height: 30px;
+    height: 60px; /* Ajusta el valor de altura según tus necesidades */
     margin-top: auto;
     opacity: 0.9;
     padding-bottom: 15px;
   }
   
+  #container{
+    background-color: white;
+    
+  }
